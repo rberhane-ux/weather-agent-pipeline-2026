@@ -1,0 +1,10 @@
+# The root .gitignore covers the whole project; these rules are repeated here
+# so this agent folder stays safe even if it is copied on its own.
+.env
+.env.*
+!.env.example
+*.json
+__pycache__/
+.venv/
+.adk/
+*.db

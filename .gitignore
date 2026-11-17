@@ -1,0 +1,57 @@
+# ============================================================
+# Secrets and credentials: never commit these
+# ============================================================
+.env
+.env.*
+!.env.example
+
+# Service account keys and other credential files.
+# Every *.json is ignored as a safety net, because GCP keys are JSON files.
+*.json
+weather-service-account.json
+*service-account*
+*credentials*.json
+*.pem
+*.key
+*.p12
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ============================================================
+# Google ADK local session storage (stores conversation and state history)
+# ============================================================
+.adk/
+*.db
+*.sqlite3
+
+# ============================================================
+# Generated pipeline output (recreated on every run)
+# ============================================================
+data/
+output/
+*.tmp
+
+# ============================================================
+# Logs, OS and editor files
+# ============================================================
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

@@ -1,0 +1,20 @@
+# Python 3.11+ required (google-adk and pandas both require >= 3.11).
+# Tested with Python 3.14.
+
+# Agent framework and Gemini client
+google-adk>=2.14
+google-genai>=2.34
+
+# Google Cloud Storage upload and its auth / error types
+google-cloud-storage>=3.0
+google-auth>=2.30
+google-api-core>=2.20
+
+# Data ingestion and processing
+requests>=2.32
+urllib3>=2.0
+pandas>=2.2
+python-dotenv>=1.0
+
+# IANA time-zone database for zoneinfo on Windows (built in on macOS/Linux)
+tzdata; sys_platform == "win32"
