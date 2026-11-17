@@ -129,7 +129,7 @@ Authentication uses a **service account key** referenced by `GOOGLE_APPLICATION_
 ### 1. Install dependencies
 
 ```bash
-git clone <your-repo-url>
+git clone cd weather-agent-pipeline-2026
 cd weather-agent-pipeline
 
 python -m venv .venv
